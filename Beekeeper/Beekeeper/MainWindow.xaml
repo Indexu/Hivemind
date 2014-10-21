@@ -1,0 +1,46 @@
+﻿<Window x:Class="Beekeeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Beekeeper" Height="455.075" Width="550.304" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,0">
+        <Grid Background="#FFE5E5E5" Margin="1,0,0,0">
+            <DataGrid AutoGenerateColumns="True" 
+          Height="267" 
+          HorizontalAlignment="Left" 
+          Name="dataGrid1" 
+          VerticalAlignment="Top" 
+          Width="520" Margin="10,11,0,0"
+          SelectionMode="Single" 
+          SelectionUnit="FullRow"
+          CanUserResizeRows="False"
+          CanUserResizeColumns="False"
+          CanUserReorderColumns="False"
+          AlternatingRowBackground="Gainsboro"  
+          AlternationCount="2"
+          IsReadOnly="True"
+          HeadersVisibility="Column" SelectionChanged="dataGrid1_SelectionChanged"/>
+            <TextBox x:Name="input_accountID" HorizontalAlignment="Left" Height="23" Margin="78,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" IsEnabled="False"/>
+            <TextBox x:Name="input_email" HorizontalAlignment="Left" Height="23" Margin="54,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
+            <Label Content="Account ID:" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top"/>
+            <Label Content="Email:" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top"/>
+            <Label Content="Status:" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.091,0.478"/>
+            <Button x:Name="button_update" Content="Update account info" HorizontalAlignment="Left" Margin="78,369,0,0" VerticalAlignment="Top" Width="170" Click="button_update_Click" Height="23" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="button_delete" Content="Delete account" HorizontalAlignment="Left" Margin="78,397,0,0" VerticalAlignment="Top" Width="170" Height="24" FontSize="14" FontWeight="Bold" Click="button_delete_Click"/>
+            <Button x:Name="button_refresh" Content="Refresh" HorizontalAlignment="Left" Margin="455,283,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Click="button_refresh_Click"/>
+            <ComboBox x:Name="input_status" HorizontalAlignment="Left" Margin="54,345,0,0" VerticalAlignment="Top" Width="194">
+                <ComboBoxItem Content="beekeeper" Height="20" Width="194"/>
+                <ComboBoxItem Content="queen_bee" Height="20" Width="194"/>
+                <ComboBoxItem Content="brood" Height="20" Width="194"/>
+                <ComboBoxItem Content="banned" Height="20" Width="194"/>
+            </ComboBox>
+            <GroupBox Header="Confirmation" HorizontalAlignment="Left" Margin="253,289,0,0" VerticalAlignment="Top" Height="81" Width="81">
+                <Grid HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="71" Margin="0,0,-2,0">
+                    <RadioButton x:Name="radio_0" Content="0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="radio_1" Content="1" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </GroupBox>
+            <Button Content="New Account" HorizontalAlignment="Left" Margin="407,397,0,0" VerticalAlignment="Top" Width="129" Height="25" FontSize="14" FontWeight="Bold" Click="Button_Click_1"/>
+
+        </Grid>
+    </Grid>
+</Window>

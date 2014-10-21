@@ -1,0 +1,78 @@
+﻿#threadContainer {
+
+	display:inline-block;
+
+}
+
+#threadContainer:hover{
+
+	
+
+}
+
+.threadHeader {
+
+	width:100%;
+	background-color:rgba(0,0,0,0.7);
+	height:20px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	cursor:pointer;
+
+}
+
+.Posts {
+
+	background-color:rgba(0,0,0,0.2);
+	min-height:70px;
+	margin-bottom:2px;
+
+}
+
+#headPost {
+
+	border:1px solid black;
+
+}
+
+.replyPost {
+
+	margin-left:50px;
+	border:1px solid black;
+
+}
+
+.postText {
+
+	display:inline-block;
+	font-size:16px;
+	color:black;
+	font-family:"Arial";
+	margin-left:20px;
+	margin-top:20px;
+
+}
+
+.replyButton {
+
+	display:inline-block;
+	float:right;
+	font-size:10px;
+	margin-top:5px;
+	margin-right:5px;
+
+}
+
+.replyButton:hover {
+
+	font-size:12px;
+	margin-top:3px;
+	margin-right:3px;
+
+}
+
+.Thread {
+
+	margin-bottom:20px;
+
+}
